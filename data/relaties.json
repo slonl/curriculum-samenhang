@@ -1,15 +1,14 @@
 [
 	{
-		"title": "Evolutie",
-		"id": "6f89320a-3fcb-4df0-9efe-1483683b4795",
+		"title": "Relatie tussen 2 uitwerkingen",
+		"id": "66f7358c-e967-43a6-ba94-73ba3e9367bf",
 		"unreleased": true,
-		"prefix": "",
-		"description": "Evolutie",
-		"vakleergebied_id": [
-			"41dd7292-3cce-411b-8097-11db8c875a89"
+		"description": "",
+		"fo_uitwerking_id": [
+			"10e8e10d-85f5-4157-80b7-11eb7c92b598"
 		],
-		"fo_subdomein_id": [
-			"d3878a77-3321-4f28-b462-4314a0f2d3bd"
+		"fo_uitwerking_id": [
+			"3fd68977-3d67-4493-825c-b5a1b74cbd07"
 		]
 	}
 ]
