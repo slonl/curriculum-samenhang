@@ -24,14 +24,8 @@
 	},
 	"definitions": {
 		"tag": {
-			"type": "object",
+			"allOf": [ { "$ref": "https://opendata.slo.nl/curriculum/schemas/curriculum-basis/context.json#/definitions/base" } ],
 			"properties": {
-				"id": {
-					"$ref": "#/definitions/uuid"
-				},
-				"title": {
-					"type": "string"
-				}
 				"fo_doelzin_id": {
 					"allOf": [
 						{ "$ref": "https://opendata.slo.nl/curriculum/schemas/curriculum-basis/context.json#/definitions/uuidArray" },
@@ -58,14 +52,8 @@
 			]
 		},
 		"relatie": {
-			"type": "object",
+			"allOf": [ { "$ref": "https://opendata.slo.nl/curriculum/schemas/curriculum-basis/context.json#/definitions/base" } ],
 			"properties": {
-				"id": {					
-					"$ref": "#/definitions/uuid"
-				},
-				"title": {
-					"type": "string"
-				},
 				"fo_doelzin_id": {
 					"allOf": [
 						{ "$ref": "https://opendata.slo.nl/curriculum/schemas/curriculum-basis/context.json#/definitions/uuidArray" },
@@ -86,23 +74,27 @@
 				}
 			},
 			"anyOf" : [
-				{ "required": ["id","title","fo_doelzin","fo_doelzin"] },
-				{ "required": ["id","title","fo_toelichting_id","fo_toelichting_id"] },
-				{ "required": ["id","title","fo_uitwerking_id","fo_uitwerking_id"] }
+				{ "required": ["id","title","fo_doelzin"] },
+				{ "required": ["id","title","fo_toelichting_id"] },
+				{ "required": ["id","title","fo_uitwerking_id"] }
 			]
 		},
 		"allEntities" : {
 			"properties" : {
 				"tag_id" : {
-					"allOf": [ {"$ref": "#/definitions/uuidArray"} ]
+					"allOf": [ {"$ref": "https://opendata.slo.nl/curriculum/schemas/curriculum-basis/context.json#/definitions/uuidArray"} ],
+					"items": {
+						"itemTypeReference": "#/definitions/tag"
+					}
 				},
 				"relatie_id" : {
-					"allOf": [ {"$ref": "#/definitions/uuidArray"} ]
-				},
-				"deprecated_id" : {
-					"allOf": [ {"$ref": "#/definitions/uuidArray"} ]
+					"allOf": [ {"$ref": "https://opendata.slo.nl/curriculum/schemas/curriculum-basis/context.json#/definitions/uuidArray"} ],
+					"items": {
+						"itemTypeReference": "#/definitions/relatie"
+					}
 				}
 			}
 		}
-	}
+	},
+	"required": ["tag","relatie"]
 }
