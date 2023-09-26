@@ -45,11 +45,7 @@
 					]
 				}
 			},
-			"anyOf" : [
-				{ "required": ["id","title","fo_doelzin"] },
-				{ "required": ["id","title","fo_toelichting_id"] },
-				{ "required": ["id","title","fo_uitwerking_id"] }
-			]
+			"required": ["id","title"]
 		},
 		"relatie": {
 			"allOf": [ { "$ref": "https://opendata.slo.nl/curriculum/schemas/curriculum-basis/context.json#/definitions/base" } ],
@@ -73,11 +69,7 @@
 					]
 				}
 			},
-			"anyOf" : [
-				{ "required": ["id","title","fo_doelzin"] },
-				{ "required": ["id","title","fo_toelichting_id"] },
-				{ "required": ["id","title","fo_uitwerking_id"] }
-			]
+			"required": ["id","title"]
 		},
 		"allEntities" : {
 			"properties" : {
