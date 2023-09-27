@@ -505,7 +505,6 @@
 			"7f26928c-4bb9-46c4-92cf-06cbea6a7522",
 			"70d7fc98-d74d-4588-b71c-cc5370d9b844",
 			"f9974c63-8cd8-4b3e-adab-175afcb5185e",
-			"6556a644-82ac-4180-be69-6d602b06d1b0",
 			"3d7372e5-0205-4cb7-96b4-8f7e30722dea"
 		]
 	},
@@ -579,9 +578,7 @@
 			"c99da807-6e03-42fe-9fab-4a36e3aa355a",
 			"283bf714-8767-49ae-84a9-c4c562231541"
 		],
-		"examenprogramma_kop3_id": [
-			"1578c74b-1708-4030-b2e5-1d261a50d6eb"
-		],
+		"examenprogramma_kop3_id": [],
 		"examenprogramma_kop2_id": [
 			"b7486164-e607-4527-b598-9688aa1fcda8"
 		],
